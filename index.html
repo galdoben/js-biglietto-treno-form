@@ -5,46 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train</title>
     <link rel="stylesheet" href="style.css">
-    </html><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css' integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==' crossorigin='anonymous'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css' integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==' crossorigin='anonymous'/>
+
 </head>
+
 <body>
+    <form id="info" > 
     <div class="insert">
-        <div class="input-group-a mb-3 w-75 p-3">
+        <div class="input-group-a mb-3 w-75 p-3 ">
             <span class="input-group-text">Nome Cognome</span>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" id="name-input">
         </div>
         <div class="input-group-b mb-3 w-75 p-3">
             <span class="input-group-text">Km da percorrere</span>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" id="km-input">
         </div>
     </div>
     <div class="send d-flex"> 
-        <select class="form-select" aria-label="Default select example">
+        <select id="age-input" class="form-select" aria-label="Default select example">
             <option selected>Fascia d'età</option>
             <option value="1">Under 18</option>
-            <option value="2">Over 18</option>
+            <option value="2">Over 18</option> 
             <option value="3">Over 65</option>
         </select>
-        <button type="button" class="btn btn-outline-warning col-4">Calcola Prezzo</button>
-    </div>    
+        <button id="calc" type="button" class="btn btn-outline-warning col-4">Calcola Prezzo</button>
+    </div> 
+    </form>   
     <div class="ticket">
         <h2>Il Tuo Ticket:</h2>
         <div class="card">
             <h5 class="card-header">Dettagli Passeggero</h5>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Nome Passeggero<span id="name-surn"></span></h5>
+              <p class="card-text">Sconto<span id="disc"></span></p>
+              <p class="card-text">Carrozza<span id="posto"></span></p>
+              <p class="card-text">Codice Cp<span id="code"></span></p>
+              <p class="card-text">Costo Ticket<span id="price"></span></p>
+              <a href="#" class="btn btn-primary">Scarica QR.Code</a>
             </div>
           </div>
     </div>
-</body>
-
-
 
 
 
 
 <script src="script.js" ></script>
 </body>
-
+</html>
